@@ -122,11 +122,11 @@ export default function CheckoutPage() {
   // Demo hızlı doldurma (jüri / müşteri sunumu kolaylığı için)
   const fillSampleCustomer = () => {
     setFullName("Zeynep Karahan");
-    setPhone("0532 418 72 90");
-    setEmail("zeynep.karahan@ornek.com");
+    setPhone("0500 000 00 00");
+    setEmail("zeynep.ornek@ornek.com");
     setCity("İstanbul");
     setDistrict("Kadıköy");
-    setAddressLine("Moda Caddesi Şair Nefi Sokak No: 18 Daire: 4 Caferağa");
+    setAddressLine("Örnek Mah. Örnek Cad. No: 18 Daire: 4");
     setPostalCode("34710");
     setDeliveryNote("Güvenliğe bırakabilirsiniz.");
     setFormError(null);
@@ -183,7 +183,7 @@ export default function CheckoutPage() {
     }
     if (!phone.trim() || phone.replace(/\D/g, "").length < 10) {
       setFormError(
-        "Lütfen geçerli bir telefon numarası girin (ör. 0532 000 00 00)."
+        "Lütfen geçerli bir telefon numarası girin (ör. 0500 000 00 00)."
       );
       return false;
     }
@@ -674,7 +674,7 @@ export default function CheckoutPage() {
                   required
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
-                  placeholder="0532 000 00 00"
+                  placeholder="0500 000 00 00"
                   className="w-full rounded-sm border border-[var(--color-border-subtle)] bg-[#FAF8F5] px-3.5 py-2.5 text-sm text-[#1F1F1F] focus:border-[#1F1F1F] focus:bg-white focus:outline-none"
                 />
               </div>

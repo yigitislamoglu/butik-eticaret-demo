@@ -2,6 +2,7 @@ import { describe, it } from "node:test";
 import assert from "node:assert/strict";
 import { calculateCartTotals } from "../lib/pricing";
 import { getProductPricing, isCampaignActive, normalizeTurkish } from "../lib/utils";
+import { products, CATEGORY_INFO } from "../content/products";
 
 describe("Fiyat Etiketi Yönetmeliği ve Kampanya Hesaplamaları", () => {
   const activeCampaign = {
@@ -10,23 +11,24 @@ describe("Fiyat Etiketi Yönetmeliği ve Kampanya Hesaplamaları", () => {
   };
   const now = new Date("2026-10-23T12:00:00+03:00");
 
-  it("Kampanya aktifken ve bitiş tarihi geçmemişken %20 indirimi doğru uygular", () => {
+  it("Kampanya aktifken ve bitiş tarihi geçmemişken %20 indirimi son 30 günün en düşük fiyatı üzerinden doğru uygular", () => {
     const pricing = getProductPricing(
       {
         price: 2450,
         campaignPercent: 20,
-        previousPrice30dLowest: 2290,
+        previousPrice30dLowest: 2450,
       },
       activeCampaign,
       now
     );
     assert.equal(pricing.hasCampaign, true);
     assert.equal(pricing.finalPrice, 1960);
-    // Üstü çizili fiyat yalnız previousPrice30dLowest doluysa o değer üzerinden gösterilmeli
-    assert.equal(pricing.strikethroughPrice, 2290);
+    // Üstü çizili fiyat yalnız previousPrice30dLowest doluysa o değer üzerinden gösterilmeli ve oran onunla birebir tutmalı (%20)
+    assert.equal(pricing.strikethroughPrice, 2450);
+    assert.equal(pricing.campaignPercent, 20);
   });
 
-  it("previousPrice30dLowest boşsa üstü çizili eski fiyat üretmez, yalnız indirimli fiyat döner", () => {
+  it("previousPrice30dLowest boşsa üstü çizili eski fiyat ve indirim yüzdesi rozeti üretmez, yalnız indirimli fiyat döner", () => {
     const pricing = getProductPricing(
       {
         price: 2000,
@@ -39,6 +41,7 @@ describe("Fiyat Etiketi Yönetmeliği ve Kampanya Hesaplamaları", () => {
     assert.equal(pricing.hasCampaign, true);
     assert.equal(pricing.finalPrice, 1600);
     assert.equal(pricing.strikethroughPrice, undefined);
+    assert.equal(pricing.campaignPercent, undefined);
   });
 
   it("Kampanya bitiş tarihi geçtiğinde kampanya kendiliğinden kalkar", () => {
@@ -107,7 +110,7 @@ describe("Sepet ve Ödeme Hesaplamaları (Ara toplam, MIRA10, Kargo, Kapıda Öd
           quantity: 1,
           price: 2450,
           campaignPercent: 20, // 2450 -> 1960 TL
-          previousPrice30dLowest: 2290,
+          previousPrice30dLowest: 2450,
           image: "/test.jpg",
         },
       ],
@@ -167,5 +170,41 @@ describe("Türkçe Karakter Duyarsız Arama Normalizasyonu", () => {
     assert.equal(normalizeTurkish("gomlek"), "gomlek");
     assert.equal(normalizeTurkish("İPEK ŞAL"), "ipek sal");
     assert.equal(normalizeTurkish("Ğğ Şş İı Çç Öö Üü"), "gg ss ii cc oo uu");
+  });
+});
+
+describe("Katalog Bütünlüğü ve Fiyat Etiketi Yönetmeliği Denetimi (36 Ürün)", () => {
+  const activeCampaign = {
+    active: true,
+    endsAt: "2026-12-31T23:59:59+03:00",
+  };
+  const now = new Date("2026-10-23T12:00:00+03:00");
+
+  it("Tüm 36 üründe üstü çizili fiyat varsa indirim yüzdesi rozeti gerçek oranla birebir tutar", () => {
+    for (const product of products) {
+      const pricing = getProductPricing(product, activeCampaign, now);
+      if (pricing.strikethroughPrice !== undefined) {
+        const expectedPct = Math.round(
+          ((pricing.strikethroughPrice - pricing.finalPrice) / pricing.strikethroughPrice) * 100
+        );
+        assert.equal(
+          pricing.campaignPercent,
+          expectedPct,
+          `${product.id} (${product.name}) indirim oranı uyuşmuyor`
+        );
+      } else {
+        assert.equal(
+          pricing.campaignPercent,
+          undefined,
+          `${product.id} (${product.name}) üstü çizili fiyat yokken indirim rozeti gösterilmemeli`
+        );
+      }
+    }
+  });
+
+  it("Kategori ve ürün metinlerinde Kiril alfabesi karakteri bulunmaz", () => {
+    const cyrillicRegex = /[\u0400-\u04FF]/;
+    assert.equal(cyrillicRegex.test( JSON.stringify(CATEGORY_INFO)), false);
+    assert.equal(cyrillicRegex.test(JSON.stringify(products)), false);
   });
 });

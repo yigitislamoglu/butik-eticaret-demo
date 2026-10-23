@@ -154,7 +154,7 @@ function OrderTrackingContent() {
               type="tel"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
-              placeholder="Örn: 0532 418 72 90"
+              placeholder="Örn: 0500 000 00 00"
               className="w-full rounded-sm border border-[var(--color-border-subtle)] bg-[#FAF8F5] px-3.5 py-2.5 text-sm text-[#1F1F1F] focus:border-[#1F1F1F] focus:bg-white focus:outline-none"
             />
           </div>

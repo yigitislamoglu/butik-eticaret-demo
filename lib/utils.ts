@@ -77,23 +77,41 @@ export function getProductPricing(
   now: Date = new Date()
 ): ProductPricingResult {
   const active = isCampaignActive(campaignConfig, now);
-  const percent = active && product.campaignPercent && product.campaignPercent > 0 ? product.campaignPercent : 0;
+  const rawPercent =
+    active && product.campaignPercent && product.campaignPercent > 0
+      ? product.campaignPercent
+      : 0;
 
   const finalPrice =
-    percent > 0 ? Math.round(product.price * (1 - percent / 100)) : product.price;
+    rawPercent > 0
+      ? Math.round(product.price * (1 - rawPercent / 100))
+      : product.price;
 
   const strikethroughPrice =
-    percent > 0 &&
+    rawPercent > 0 &&
     typeof product.previousPrice30dLowest === "number" &&
     product.previousPrice30dLowest > finalPrice
       ? product.previousPrice30dLowest
       : undefined;
 
+  // Fiyat Etiketi Yönetmeliği kuralı:
+  // Gösterilen indirim yüzdesi YALNIZ üstü çizili son 30 günün en düşük fiyatı (strikethroughPrice) üzerinden hesaplanır.
+  // Eğer previousPrice30dLowest yoksa yanıltıcı indirim yüzdesi rozeti gösterilmez.
+  const effectiveCampaignPercent =
+    strikethroughPrice !== undefined
+      ? Math.round(
+          ((strikethroughPrice - finalPrice) / strikethroughPrice) * 100
+        )
+      : undefined;
+
   return {
-    basePrice: product.price,
+    basePrice: strikethroughPrice ?? product.price,
     finalPrice,
-    hasCampaign: percent > 0,
-    campaignPercent: percent > 0 ? percent : undefined,
+    hasCampaign: rawPercent > 0,
+    campaignPercent:
+      effectiveCampaignPercent && effectiveCampaignPercent > 0
+        ? effectiveCampaignPercent
+        : undefined,
     strikethroughPrice,
   };
 }

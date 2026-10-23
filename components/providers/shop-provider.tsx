@@ -65,10 +65,10 @@ interface ShopContextValue {
 
 const ShopContext = createContext<ShopContextValue | null>(null);
 
-const CART_KEY = "mira_cart_v1";
-const COUPON_KEY = "mira_active_coupon_v1";
-const FAVORITES_KEY = "mira_favorites_v1";
-const RECENT_KEY = "mira_recently_viewed_v1";
+const CART_KEY = "mira_cart_v2";
+const COUPON_KEY = "mira_active_coupon_v2";
+const FAVORITES_KEY = "mira_favorites_v2";
+const RECENT_KEY = "mira_recently_viewed_v2";
 
 export function ShopProvider({ children }: { children: React.ReactNode }) {
   const [products, setProducts] = useState<Product[]>(staticProducts);

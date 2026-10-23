@@ -97,19 +97,29 @@ export function Header() {
             </p>
           )}
 
-          <div className="hidden items-center gap-5 text-xs text-[#E2D9CC] md:flex">
-            <Link href="/siparis-takip" className="hover:text-white hover:underline">
+          <div className="flex items-center gap-4 text-xs text-[#E2D9CC]">
+            <Link
+              href="/siparis-takip"
+              className="hidden hover:text-white hover:underline md:inline"
+            >
               Sipariş Takibi
             </Link>
-            <Link href="/iade-talebi" className="hover:text-white hover:underline">
+            <Link
+              href="/iade-talebi"
+              className="hidden hover:text-white hover:underline md:inline"
+            >
               Kolay İade ({site.returns.days} Gün)
             </Link>
             {site.demo && (
               <Link
                 href="/panel"
-                className="text-[#B88A5A] hover:underline"
+                className="inline-flex items-center gap-1.5 font-medium text-[#B88A5A] hover:underline"
               >
-                Yönetim Paneli (Demo)
+                <span
+                  className="h-1.5 w-1.5 rounded-full bg-[#B88A5A]"
+                  aria-hidden="true"
+                />
+                <span>Demo · Panel</span>
               </Link>
             )}
           </div>

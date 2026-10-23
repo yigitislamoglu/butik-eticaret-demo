@@ -70,7 +70,7 @@ export const CATEGORY_INFO: Record<
     slug: "elbise",
     name: "Elbise",
     subtitle: "Gün ışığından akşam davetlerine uzanan, doğal dokulu ve akıcı silüetler.",
-    heroImage: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1200&q=80",
+    heroImage: "https://images.unsplash.com/photo-1596783074918-c84cb06531ca?auto=format&fit=crop&w=1200&q=80",
   },
   "gomlek-bluz": {
     slug: "gomlek-bluz",
@@ -81,14 +81,14 @@ export const CATEGORY_INFO: Record<
   "pantolon-etek": {
     slug: "pantolon-etek",
     name: "Pantolon & Etek",
-    subtitle: "Yüksek bel палazzo pantolonlar, pens detaylı kesimler ve midi etekler.",
+    subtitle: "Yüksek bel palazzo pantolonlar, pens detaylı kesimler ve midi etekler.",
     heroImage: "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1200&q=80",
   },
   triko: {
     slug: "triko",
     name: "Triko",
     subtitle: "Yumuşak merinos karışımları, ince fitilli hırkalar ve mevsim geçişi kazakları.",
-    heroImage: "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=1200&q=80",
+    heroImage: "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=1200&q=80",
   },
   "dis-giyim": {
     slug: "dis-giyim",
@@ -100,7 +100,7 @@ export const CATEGORY_INFO: Record<
     slug: "aksesuar",
     name: "Aksesuar",
     subtitle: "El işçiliği deri kemerler, dokuma omuz çantaları ve saf ipek fularlar.",
-    heroImage: "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=1200&q=80",
+    heroImage: "https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?auto=format&fit=crop&w=1200&q=80",
   },
 };
 
@@ -161,13 +161,13 @@ export const products: Product[] = [
     collection: "Akdeniz Keten Seçkisi",
     price: 2450,
     campaignPercent: 20,
-    previousPrice30dLowest: 2290,
+    previousPrice30dLowest: 2450,
     colors: [
       {
         name: "Kum Beji",
         hex: "#D6C6B2",
         images: [
-          "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=80",
+          "https://images.unsplash.com/photo-1596783074918-c84cb06531ca?auto=format&fit=crop&w=900&q=80",
           "https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=900&q=80",
           "https://images.unsplash.com/photo-1502716119720-b23a93e5fe1b?auto=format&fit=crop&w=900&q=80",
         ],
@@ -177,26 +177,26 @@ export const products: Product[] = [
         hex: "#596348",
         images: [
           "https://images.unsplash.com/photo-1539008835657-9e8e9680c956?auto=format&fit=crop&w=900&q=80",
-          "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=80",
+          "https://images.unsplash.com/photo-1596783074918-c84cb06531ca?auto=format&fit=crop&w=900&q=80",
         ],
       },
     ],
     images: {
       "Kum Beji": [
-        "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=80",
+        "https://images.unsplash.com/photo-1596783074918-c84cb06531ca?auto=format&fit=crop&w=900&q=80",
         "https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=900&q=80",
         "https://images.unsplash.com/photo-1502716119720-b23a93e5fe1b?auto=format&fit=crop&w=900&q=80",
       ],
       "Zeytin Yeşili": [
         "https://images.unsplash.com/photo-1539008835657-9e8e9680c956?auto=format&fit=crop&w=900&q=80",
-        "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=80",
+        "https://images.unsplash.com/photo-1596783074918-c84cb06531ca?auto=format&fit=crop&w=900&q=80",
       ],
     },
     variants: createVariants("MRA-ELB-01", ["Kum Beji", "Zeytin Yeşili"], ["XS", "S", "M", "L", "XL"], [4, 7, 2, 0, 3]),
     tags: ["yeni", "cok-satan", "surdurulebilir"],
     related: ["prd-02", "prd-07", "prd-25", "prd-31"],
     instagramHandleCaption: {
-      postImage: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=80",
+      postImage: "https://images.unsplash.com/photo-1596783074918-c84cb06531ca?auto=format&fit=crop&w=900&q=80",
       caption: "DM'den en çok sorulan Alara Keten Elbise tüm bedenleriyle stokta.",
       dateLabel: "2 gün önce paylaşıldı",
     },
@@ -336,14 +336,14 @@ export const products: Product[] = [
     collection: "Zamansız Kapsül",
     price: 2350,
     campaignPercent: 20,
-    previousPrice30dLowest: 2150,
+    previousPrice30dLowest: 2350,
     colors: [
       {
         name: "Karamel",
         hex: "#B88A5A",
         images: [
           "https://images.unsplash.com/photo-1502716119720-b23a93e5fe1b?auto=format&fit=crop&w=900&q=80",
-          "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=80",
+          "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&w=900&q=80",
         ],
       },
       {
@@ -358,7 +358,7 @@ export const products: Product[] = [
     images: {
       Karamel: [
         "https://images.unsplash.com/photo-1502716119720-b23a93e5fe1b?auto=format&fit=crop&w=900&q=80",
-        "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=80",
+        "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&w=900&q=80",
       ],
       Siyah: [
         "https://images.unsplash.com/photo-1539008835657-9e8e9680c956?auto=format&fit=crop&w=900&q=80",
@@ -389,7 +389,7 @@ export const products: Product[] = [
         hex: "#E2D9C8",
         images: [
           "https://images.unsplash.com/photo-1485968579580-b6d095142e6e?auto=format&fit=crop&w=900&q=80",
-          "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=80",
+          "https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?auto=format&fit=crop&w=900&q=80",
         ],
       },
       {
@@ -404,7 +404,7 @@ export const products: Product[] = [
     images: {
       Yulaf: [
         "https://images.unsplash.com/photo-1485968579580-b6d095142e6e?auto=format&fit=crop&w=900&q=80",
-        "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=80",
+        "https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?auto=format&fit=crop&w=900&q=80",
       ],
       Antrasit: [
         "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=900&q=80",
@@ -478,7 +478,7 @@ export const products: Product[] = [
     collection: "Akdeniz Keten Seçkisi",
     price: 1650,
     campaignPercent: 20,
-    previousPrice30dLowest: 1550,
+    previousPrice30dLowest: 1650,
     colors: [
       {
         name: "Doğal Keten",
@@ -500,7 +500,7 @@ export const products: Product[] = [
         name: "Espresso",
         hex: "#3B2B23",
         images: [
-          "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=900&q=80",
+          "https://images.unsplash.com/photo-1564257631407-4deb1f99d992?auto=format&fit=crop&w=900&q=80",
           "https://images.unsplash.com/photo-1551163943-3f6a855d1153?auto=format&fit=crop&w=900&q=80",
         ],
       },
@@ -515,7 +515,7 @@ export const products: Product[] = [
         "https://images.unsplash.com/photo-1551163943-3f6a855d1153?auto=format&fit=crop&w=900&q=80",
       ],
       Espresso: [
-        "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=900&q=80",
+        "https://images.unsplash.com/photo-1564257631407-4deb1f99d992?auto=format&fit=crop&w=900&q=80",
         "https://images.unsplash.com/photo-1551163943-3f6a855d1153?auto=format&fit=crop&w=900&q=80",
       ],
     },
@@ -698,7 +698,7 @@ export const products: Product[] = [
         name: "Siyah",
         hex: "#1F1F1F",
         images: [
-          "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=900&q=80",
+          "https://images.unsplash.com/photo-1598554747436-c9293d6a588f?auto=format&fit=crop&w=900&q=80",
           "https://images.unsplash.com/photo-1551163943-3f6a855d1153?auto=format&fit=crop&w=900&q=80",
         ],
       },
@@ -707,18 +707,18 @@ export const products: Product[] = [
         hex: "#D5C5B0",
         images: [
           "https://images.unsplash.com/photo-1551163943-3f6a855d1153?auto=format&fit=crop&w=900&q=80",
-          "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=900&q=80",
+          "https://images.unsplash.com/photo-1564257631407-4deb1f99d992?auto=format&fit=crop&w=900&q=80",
         ],
       },
     ],
     images: {
       Siyah: [
-        "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=900&q=80",
+        "https://images.unsplash.com/photo-1598554747436-c9293d6a588f?auto=format&fit=crop&w=900&q=80",
         "https://images.unsplash.com/photo-1551163943-3f6a855d1153?auto=format&fit=crop&w=900&q=80",
       ],
       Kum: [
         "https://images.unsplash.com/photo-1551163943-3f6a855d1153?auto=format&fit=crop&w=900&q=80",
-        "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=900&q=80",
+        "https://images.unsplash.com/photo-1564257631407-4deb1f99d992?auto=format&fit=crop&w=900&q=80",
       ],
     },
     variants: createVariants("MRA-GML-11", ["Siyah", "Kum"], ["XS", "S", "M", "L"], [4, 5, 3, 2]),
@@ -788,7 +788,7 @@ export const products: Product[] = [
     collection: "Akdeniz Keten Seçkisi",
     price: 1950,
     campaignPercent: 20,
-    previousPrice30dLowest: 1850,
+    previousPrice30dLowest: 1950,
     colors: [
       {
         name: "Doğal Keten",
@@ -810,7 +810,7 @@ export const products: Product[] = [
         name: "Siyah",
         hex: "#1F1F1F",
         images: [
-          "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=900&q=80",
+          "https://images.unsplash.com/photo-1506629082955-511b1aa562c8?auto=format&fit=crop&w=900&q=80",
           "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=900&q=80",
         ],
       },
@@ -825,7 +825,7 @@ export const products: Product[] = [
         "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=900&q=80",
       ],
       Siyah: [
-        "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=900&q=80",
+        "https://images.unsplash.com/photo-1506629082955-511b1aa562c8?auto=format&fit=crop&w=900&q=80",
         "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=900&q=80",
       ],
     },
@@ -911,7 +911,7 @@ export const products: Product[] = [
         name: "Siyah",
         hex: "#1F1F1F",
         images: [
-          "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=900&q=80",
+          "https://images.unsplash.com/photo-1506629082955-511b1aa562c8?auto=format&fit=crop&w=900&q=80",
           "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=900&q=80",
         ],
       },
@@ -922,7 +922,7 @@ export const products: Product[] = [
         "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=900&q=80",
       ],
       Siyah: [
-        "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=900&q=80",
+        "https://images.unsplash.com/photo-1506629082955-511b1aa562c8?auto=format&fit=crop&w=900&q=80",
         "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=900&q=80",
       ],
     },
@@ -1043,14 +1043,14 @@ export const products: Product[] = [
         hex: "#CFC6B8",
         images: [
           "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=900&q=80",
-          "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=900&q=80",
+          "https://images.unsplash.com/photo-1506629082955-511b1aa562c8?auto=format&fit=crop&w=900&q=80",
         ],
       },
       {
         name: "Gece Siyahı",
         hex: "#1F1F1F",
         images: [
-          "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=900&q=80",
+          "https://images.unsplash.com/photo-1506629082955-511b1aa562c8?auto=format&fit=crop&w=900&q=80",
           "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=900&q=80",
         ],
       },
@@ -1058,10 +1058,10 @@ export const products: Product[] = [
     images: {
       Taş: [
         "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=900&q=80",
-        "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=900&q=80",
+        "https://images.unsplash.com/photo-1506629082955-511b1aa562c8?auto=format&fit=crop&w=900&q=80",
       ],
       "Gece Siyahı": [
-        "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=900&q=80",
+        "https://images.unsplash.com/photo-1506629082955-511b1aa562c8?auto=format&fit=crop&w=900&q=80",
         "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=900&q=80",
       ],
     },
@@ -1086,13 +1086,13 @@ export const products: Product[] = [
     collection: "Sonbahar / Kış Editoryal",
     price: 1890,
     campaignPercent: 20,
-    previousPrice30dLowest: 1790,
+    previousPrice30dLowest: 1890,
     colors: [
       {
         name: "Yulaf Melanj",
         hex: "#DFD5C5",
         images: [
-          "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=900&q=80",
+          "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=900&q=80",
           "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=900&q=80",
         ],
       },
@@ -1101,25 +1101,25 @@ export const products: Product[] = [
         hex: "#B88A5A",
         images: [
           "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=900&q=80",
-          "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=900&q=80",
+          "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=900&q=80",
         ],
       },
     ],
     images: {
       "Yulaf Melanj": [
-        "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=900&q=80",
+        "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=900&q=80",
         "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=900&q=80",
       ],
       Karamel: [
         "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=900&q=80",
-        "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=900&q=80",
+        "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=900&q=80",
       ],
     },
     variants: createVariants("MRA-TRK-19", ["Yulaf Melanj", "Karamel"], ["XS", "S", "M", "L"], [4, 7, 2, 1]),
     tags: ["cok-satan", "yeni"],
     related: ["prd-14", "prd-13", "prd-20"],
     instagramHandleCaption: {
-      postImage: "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=900&q=80",
+      postImage: "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=900&q=80",
       caption: "Luna Merinos Hırka: serin akşamların en yumuşak eşlikçisi.",
       dateLabel: "1 hafta önce paylaşıldı",
     },
@@ -1144,14 +1144,14 @@ export const products: Product[] = [
         hex: "#F4EFE6",
         images: [
           "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=900&q=80",
-          "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=900&q=80",
+          "https://images.unsplash.com/photo-1578587018452-892bacefd3f2?auto=format&fit=crop&w=900&q=80",
         ],
       },
       {
         name: "Siyah",
         hex: "#1F1F1F",
         images: [
-          "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=900&q=80",
+          "https://images.unsplash.com/photo-1578587018452-892bacefd3f2?auto=format&fit=crop&w=900&q=80",
           "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=900&q=80",
         ],
       },
@@ -1159,10 +1159,10 @@ export const products: Product[] = [
     images: {
       Ekru: [
         "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=900&q=80",
-        "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=900&q=80",
+        "https://images.unsplash.com/photo-1578587018452-892bacefd3f2?auto=format&fit=crop&w=900&q=80",
       ],
       Siyah: [
-        "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=900&q=80",
+        "https://images.unsplash.com/photo-1578587018452-892bacefd3f2?auto=format&fit=crop&w=900&q=80",
         "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=900&q=80",
       ],
     },
@@ -1189,7 +1189,7 @@ export const products: Product[] = [
         name: "Kum",
         hex: "#D6C6B2",
         images: [
-          "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=900&q=80",
+          "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=900&q=80",
           "https://images.unsplash.com/photo-1485968579580-b6d095142e6e?auto=format&fit=crop&w=900&q=80",
         ],
       },
@@ -1198,18 +1198,18 @@ export const products: Product[] = [
         hex: "#453327",
         images: [
           "https://images.unsplash.com/photo-1485968579580-b6d095142e6e?auto=format&fit=crop&w=900&q=80",
-          "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=900&q=80",
+          "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=900&q=80",
         ],
       },
     ],
     images: {
       Kum: [
-        "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=900&q=80",
+        "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=900&q=80",
         "https://images.unsplash.com/photo-1485968579580-b6d095142e6e?auto=format&fit=crop&w=900&q=80",
       ],
       "Acı Kahve": [
         "https://images.unsplash.com/photo-1485968579580-b6d095142e6e?auto=format&fit=crop&w=900&q=80",
-        "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=900&q=80",
+        "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=900&q=80",
       ],
     },
     variants: createVariants("MRA-TRK-21", ["Kum", "Acı Kahve"], ["XS", "S", "M", "L"], [2, 5, 4, 1]),
@@ -1237,14 +1237,14 @@ export const products: Product[] = [
         hex: "#F4EFE6",
         images: [
           "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=900&q=80",
-          "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=900&q=80",
+          "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=900&q=80",
         ],
       },
       {
         name: "Antrasit Melanj",
         hex: "#424242",
         images: [
-          "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=900&q=80",
+          "https://images.unsplash.com/photo-1578587018452-892bacefd3f2?auto=format&fit=crop&w=900&q=80",
           "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=900&q=80",
         ],
       },
@@ -1252,10 +1252,10 @@ export const products: Product[] = [
     images: {
       Krem: [
         "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=900&q=80",
-        "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=900&q=80",
+        "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=900&q=80",
       ],
       "Antrasit Melanj": [
-        "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=900&q=80",
+        "https://images.unsplash.com/photo-1578587018452-892bacefd3f2?auto=format&fit=crop&w=900&q=80",
         "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=900&q=80",
       ],
     },
@@ -1328,7 +1328,7 @@ export const products: Product[] = [
         name: "Kum Beji",
         hex: "#D6C6B2",
         images: [
-          "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=900&q=80",
+          "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=900&q=80",
           "https://images.unsplash.com/photo-1485968579580-b6d095142e6e?auto=format&fit=crop&w=900&q=80",
         ],
       },
@@ -1337,18 +1337,18 @@ export const products: Product[] = [
         hex: "#596348",
         images: [
           "https://images.unsplash.com/photo-1485968579580-b6d095142e6e?auto=format&fit=crop&w=900&q=80",
-          "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=900&q=80",
+          "https://images.unsplash.com/photo-1578587018452-892bacefd3f2?auto=format&fit=crop&w=900&q=80",
         ],
       },
     ],
     images: {
       "Kum Beji": [
-        "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=900&q=80",
+        "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=900&q=80",
         "https://images.unsplash.com/photo-1485968579580-b6d095142e6e?auto=format&fit=crop&w=900&q=80",
       ],
       Zeytin: [
         "https://images.unsplash.com/photo-1485968579580-b6d095142e6e?auto=format&fit=crop&w=900&q=80",
-        "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=900&q=80",
+        "https://images.unsplash.com/photo-1578587018452-892bacefd3f2?auto=format&fit=crop&w=900&q=80",
       ],
     },
     variants: createVariants("MRA-TRK-24", ["Kum Beji", "Zeytin"], ["XS", "S", "M", "L"], [2, 6, 5, 3]),
@@ -1372,21 +1372,21 @@ export const products: Product[] = [
     collection: "Sonbahar / Kış Editoryal",
     price: 3650,
     campaignPercent: 20,
-    previousPrice30dLowest: 3490,
+    previousPrice30dLowest: 3650,
     colors: [
       {
         name: "Taş Beji",
         hex: "#CBBBA4",
         images: [
           "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=900&q=80",
-          "https://images.unsplash.com/photo-1548624313-0396c75e4b1a?auto=format&fit=crop&w=900&q=80",
+          "https://images.unsplash.com/photo-1544022613-e87ca75a784a?auto=format&fit=crop&w=900&q=80",
         ],
       },
       {
         name: "Haki",
         hex: "#525946",
         images: [
-          "https://images.unsplash.com/photo-1548624313-0396c75e4b1a?auto=format&fit=crop&w=900&q=80",
+          "https://images.unsplash.com/photo-1544022613-e87ca75a784a?auto=format&fit=crop&w=900&q=80",
           "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=900&q=80",
         ],
       },
@@ -1394,10 +1394,10 @@ export const products: Product[] = [
     images: {
       "Taş Beji": [
         "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=900&q=80",
-        "https://images.unsplash.com/photo-1548624313-0396c75e4b1a?auto=format&fit=crop&w=900&q=80",
+        "https://images.unsplash.com/photo-1544022613-e87ca75a784a?auto=format&fit=crop&w=900&q=80",
       ],
       Haki: [
-        "https://images.unsplash.com/photo-1548624313-0396c75e4b1a?auto=format&fit=crop&w=900&q=80",
+        "https://images.unsplash.com/photo-1544022613-e87ca75a784a?auto=format&fit=crop&w=900&q=80",
         "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=900&q=80",
       ],
     },
@@ -1441,7 +1441,7 @@ export const products: Product[] = [
         name: "Doğal Keten",
         hex: "#DDD3C2",
         images: [
-          "https://images.unsplash.com/photo-1548624313-0396c75e4b1a?auto=format&fit=crop&w=900&q=80",
+          "https://images.unsplash.com/photo-1584273143981-41c073dfe8f8?auto=format&fit=crop&w=900&q=80",
           "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=900&q=80",
         ],
       },
@@ -1450,18 +1450,18 @@ export const products: Product[] = [
         hex: "#1F1F1F",
         images: [
           "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=900&q=80",
-          "https://images.unsplash.com/photo-1548624313-0396c75e4b1a?auto=format&fit=crop&w=900&q=80",
+          "https://images.unsplash.com/photo-1584273143981-41c073dfe8f8?auto=format&fit=crop&w=900&q=80",
         ],
       },
     ],
     images: {
       "Doğal Keten": [
-        "https://images.unsplash.com/photo-1548624313-0396c75e4b1a?auto=format&fit=crop&w=900&q=80",
+        "https://images.unsplash.com/photo-1584273143981-41c073dfe8f8?auto=format&fit=crop&w=900&q=80",
         "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=900&q=80",
       ],
       Siyah: [
         "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=900&q=80",
-        "https://images.unsplash.com/photo-1548624313-0396c75e4b1a?auto=format&fit=crop&w=900&q=80",
+        "https://images.unsplash.com/photo-1584273143981-41c073dfe8f8?auto=format&fit=crop&w=900&q=80",
       ],
     },
     variants: createVariants("MRA-DIS-26", ["Doğal Keten", "Siyah"], ["XS", "S", "M", "L", "XL"], [2, 5, 4, 3, 1]),
@@ -1487,7 +1487,7 @@ export const products: Product[] = [
         name: "Ekru Dokulu",
         hex: "#F2EDE4",
         images: [
-          "https://images.unsplash.com/photo-1548624313-0396c75e4b1a?auto=format&fit=crop&w=900&q=80",
+          "https://images.unsplash.com/photo-1584273143981-41c073dfe8f8?auto=format&fit=crop&w=900&q=80",
           "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=900&q=80",
         ],
       },
@@ -1496,18 +1496,18 @@ export const products: Product[] = [
         hex: "#1F1F1F",
         images: [
           "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=900&q=80",
-          "https://images.unsplash.com/photo-1548624313-0396c75e4b1a?auto=format&fit=crop&w=900&q=80",
+          "https://images.unsplash.com/photo-1584273143981-41c073dfe8f8?auto=format&fit=crop&w=900&q=80",
         ],
       },
     ],
     images: {
       "Ekru Dokulu": [
-        "https://images.unsplash.com/photo-1548624313-0396c75e4b1a?auto=format&fit=crop&w=900&q=80",
+        "https://images.unsplash.com/photo-1584273143981-41c073dfe8f8?auto=format&fit=crop&w=900&q=80",
         "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=900&q=80",
       ],
       "Siyah Dokulu": [
         "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=900&q=80",
-        "https://images.unsplash.com/photo-1548624313-0396c75e4b1a?auto=format&fit=crop&w=900&q=80",
+        "https://images.unsplash.com/photo-1584273143981-41c073dfe8f8?auto=format&fit=crop&w=900&q=80",
       ],
     },
     variants: createVariants("MRA-DIS-27", ["Ekru Dokulu", "Siyah Dokulu"], ["XS", "S", "M", "L"], [2, 4, 3, 1]),
@@ -1529,7 +1529,7 @@ export const products: Product[] = [
     collection: "Sonbahar / Kış Editoryal",
     price: 4450,
     campaignPercent: 20,
-    previousPrice30dLowest: 4190,
+    previousPrice30dLowest: 4450,
     colors: [
       {
         name: "Karamel",
@@ -1581,7 +1581,7 @@ export const products: Product[] = [
         name: "Kum Beji",
         hex: "#D6C6B2",
         images: [
-          "https://images.unsplash.com/photo-1548624313-0396c75e4b1a?auto=format&fit=crop&w=900&q=80",
+          "https://images.unsplash.com/photo-1584273143981-41c073dfe8f8?auto=format&fit=crop&w=900&q=80",
           "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=900&q=80",
         ],
       },
@@ -1590,18 +1590,18 @@ export const products: Product[] = [
         hex: "#9E4B3B",
         images: [
           "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=900&q=80",
-          "https://images.unsplash.com/photo-1548624313-0396c75e4b1a?auto=format&fit=crop&w=900&q=80",
+          "https://images.unsplash.com/photo-1544022613-e87ca75a784a?auto=format&fit=crop&w=900&q=80",
         ],
       },
     ],
     images: {
       "Kum Beji": [
-        "https://images.unsplash.com/photo-1548624313-0396c75e4b1a?auto=format&fit=crop&w=900&q=80",
+        "https://images.unsplash.com/photo-1584273143981-41c073dfe8f8?auto=format&fit=crop&w=900&q=80",
         "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=900&q=80",
       ],
       Kiremit: [
         "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=900&q=80",
-        "https://images.unsplash.com/photo-1548624313-0396c75e4b1a?auto=format&fit=crop&w=900&q=80",
+        "https://images.unsplash.com/photo-1544022613-e87ca75a784a?auto=format&fit=crop&w=900&q=80",
       ],
     },
     variants: createVariants("MRA-DIS-29", ["Kum Beji", "Kiremit"], ["XS", "S", "M", "L"], [3, 5, 4, 2]),
@@ -1675,7 +1675,7 @@ export const products: Product[] = [
         name: "Taba",
         hex: "#8F5838",
         images: [
-          "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=900&q=80",
+          "https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?auto=format&fit=crop&w=900&q=80",
           "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=900&q=80",
         ],
       },
@@ -1684,18 +1684,18 @@ export const products: Product[] = [
         hex: "#1F1F1F",
         images: [
           "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=900&q=80",
-          "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=900&q=80",
+          "https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?auto=format&fit=crop&w=900&q=80",
         ],
       },
     ],
     images: {
       Taba: [
-        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=900&q=80",
+        "https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?auto=format&fit=crop&w=900&q=80",
         "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=900&q=80",
       ],
       Siyah: [
         "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=900&q=80",
-        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=900&q=80",
+        "https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?auto=format&fit=crop&w=900&q=80",
       ],
     },
     variants: createVariants("MRA-AKS-31", ["Taba", "Siyah"], ["STD"], [12, 9]),
@@ -1717,13 +1717,13 @@ export const products: Product[] = [
     collection: "Şehir Klasikleri",
     price: 2750,
     campaignPercent: 20,
-    previousPrice30dLowest: 2590,
+    previousPrice30dLowest: 2750,
     colors: [
       {
         name: "Acı Kahve",
         hex: "#433024",
         images: [
-          "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=900&q=80",
+          "https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?auto=format&fit=crop&w=900&q=80",
           "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=900&q=80",
         ],
       },
@@ -1732,18 +1732,18 @@ export const products: Product[] = [
         hex: "#EFEAE1",
         images: [
           "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=900&q=80",
-          "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=900&q=80",
+          "https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?auto=format&fit=crop&w=900&q=80",
         ],
       },
     ],
     images: {
       "Acı Kahve": [
-        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=900&q=80",
+        "https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?auto=format&fit=crop&w=900&q=80",
         "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=900&q=80",
       ],
       Krem: [
         "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=900&q=80",
-        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=900&q=80",
+        "https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?auto=format&fit=crop&w=900&q=80",
       ],
     },
     variants: createVariants("MRA-AKS-32", ["Acı Kahve", "Krem"], ["STD"], [5, 3]),
@@ -1770,14 +1770,14 @@ export const products: Product[] = [
         hex: "#B88A5A",
         images: [
           "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=900&q=80",
-          "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=900&q=80",
+          "https://images.unsplash.com/photo-1591561954557-26941169b49e?auto=format&fit=crop&w=900&q=80",
         ],
       },
     ],
     images: {
       "Toprak & Krem": [
         "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=900&q=80",
-        "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=900&q=80",
+        "https://images.unsplash.com/photo-1591561954557-26941169b49e?auto=format&fit=crop&w=900&q=80",
       ],
     },
     variants: createVariants("MRA-AKS-33", ["Toprak & Krem"], ["STD"], [8]),
@@ -1804,14 +1804,14 @@ export const products: Product[] = [
         hex: "#D2BC9A",
         images: [
           "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=900&q=80",
-          "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=900&q=80",
+          "https://images.unsplash.com/photo-1591561954557-26941169b49e?auto=format&fit=crop&w=900&q=80",
         ],
       },
     ],
     images: {
       "Doğal Rafya / Taba": [
         "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=900&q=80",
-        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=900&q=80",
+        "https://images.unsplash.com/photo-1591561954557-26941169b49e?auto=format&fit=crop&w=900&q=80",
       ],
     },
     variants: createVariants("MRA-AKS-34", ["Doğal Rafya / Taba"], ["STD"], [6]),
@@ -1838,14 +1838,14 @@ export const products: Product[] = [
         hex: "#E1D7C6",
         images: [
           "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=900&q=80",
-          "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=900&q=80",
+          "https://images.unsplash.com/photo-1591561954557-26941169b49e?auto=format&fit=crop&w=900&q=80",
         ],
       },
       {
         name: "Karamel",
         hex: "#B88A5A",
         images: [
-          "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=900&q=80",
+          "https://images.unsplash.com/photo-1591561954557-26941169b49e?auto=format&fit=crop&w=900&q=80",
           "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=900&q=80",
         ],
       },
@@ -1853,10 +1853,10 @@ export const products: Product[] = [
     images: {
       "Yulaf Beji": [
         "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=900&q=80",
-        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=900&q=80",
+        "https://images.unsplash.com/photo-1591561954557-26941169b49e?auto=format&fit=crop&w=900&q=80",
       ],
       Karamel: [
-        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=900&q=80",
+        "https://images.unsplash.com/photo-1591561954557-26941169b49e?auto=format&fit=crop&w=900&q=80",
         "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=900&q=80",
       ],
     },
@@ -1884,14 +1884,14 @@ export const products: Product[] = [
         hex: "#1F1F1F",
         images: [
           "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=900&q=80",
-          "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=900&q=80",
+          "https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?auto=format&fit=crop&w=900&q=80",
         ],
       },
       {
         name: "Karamel",
         hex: "#B88A5A",
         images: [
-          "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=900&q=80",
+          "https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?auto=format&fit=crop&w=900&q=80",
           "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=900&q=80",
         ],
       },
@@ -1899,10 +1899,10 @@ export const products: Product[] = [
     images: {
       Siyah: [
         "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=900&q=80",
-        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=900&q=80",
+        "https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?auto=format&fit=crop&w=900&q=80",
       ],
       Karamel: [
-        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=900&q=80",
+        "https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?auto=format&fit=crop&w=900&q=80",
         "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=900&q=80",
       ],
     },

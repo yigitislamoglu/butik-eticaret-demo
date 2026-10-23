@@ -89,7 +89,7 @@ export default function HomePage() {
               >
                 <div className="relative aspect-[3/4] w-full overflow-hidden">
                   <Image
-                    src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1100&q=85"
+                    src="https://images.unsplash.com/photo-1596783074918-c84cb06531ca?auto=format&fit=crop&w=1100&q=85"
                     alt="Alara Kuşaklı Ham Keten Midi Elbise — Kum Beji"
                     fill
                     priority

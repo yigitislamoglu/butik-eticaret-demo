@@ -256,21 +256,6 @@ export function Footer() {
           </div>
         </div>
       </footer>
-
-      {/* Köşede Küçük, Zarif "Demo" Rozeti (`site.demo === true` iken) */}
-      {site.demo && (
-        <div
-          className="fixed bottom-4 left-4 z-30 flex items-center gap-2 border border-[#1F1F1F]/20 bg-[#FAF8F5]/95 px-3 py-1.5 text-xs text-[#1F1F1F]"
-          aria-label="Demo modu aktif"
-        >
-          <span className="h-2 w-2 rounded-full bg-[#B88A5A]" aria-hidden="true" />
-          <span className="font-medium">Demo</span>
-          <span className="text-[#5C564F]">·</span>
-          <Link href="/panel" className="underline hover:text-[#B88A5A]">
-            Panel
-          </Link>
-        </div>
-      )}
     </>
   );
 }
