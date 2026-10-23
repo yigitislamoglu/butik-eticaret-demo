@@ -24,12 +24,28 @@ const bodyFont = Plus_Jakarta_Sans({
   variable: "--font-body",
 });
 
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ||
+  "https://butik-eticaret-demo.yigitislamoglu.workers.dev";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: {
     default: `${site.name} — ${site.tagline}`,
     template: `%s | ${site.name}`,
   },
   description: `${site.name}: ${site.tagline}. Doğal keten elbiseler, poplin gömlekler, yüksek bel pantolonlar ve zamansız dış giyim koleksiyonu.`,
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon.ico", sizes: "32x32" },
+      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
+    ],
+    shortcut: ["/favicon.ico"],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+  },
   robots: site.demo
     ? { index: false, follow: false, nocache: true }
     : { index: true, follow: true },
@@ -39,6 +55,21 @@ export const metadata: Metadata = {
     siteName: site.name,
     locale: "tr_TR",
     type: "website",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: `${site.name} — ${site.tagline}`,
+        type: "image/jpeg",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${site.name} — ${site.tagline}`,
+    description: `${site.name}: ${site.tagline}. Yeni sezon butik kadın giyim seçkisi.`,
+    images: ["/og-image.jpg"],
   },
 };
 

@@ -34,7 +34,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     openGraph: {
       title: `${product.name} | ${site.name}`,
       description: product.description,
-      images: primaryImage ? [{ url: primaryImage, width: 900, height: 1200, alt: product.name }] : [],
+      images: primaryImage ? [{ url: primaryImage, width: 900, height: 1200, alt: product.name }] : ["/og-image.jpg"],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${product.name} | ${site.name}`,
+      description: product.description,
+      images: primaryImage ? [primaryImage] : ["/og-image.jpg"],
     },
   };
 }
