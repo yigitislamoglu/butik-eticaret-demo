@@ -1,0 +1,132 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #F7F3EE;
+  --surface: #EFE9E0;
+  --surface-raised: #FAF8F5;
+  --ink: #1F1F1F;
+  --muted: #5C564F;
+  --accent: #B88A5A;
+  --accent-ink: #1F1F1F;
+  --sale: #9E3B32;
+  --border-subtle: #E2D9CC;
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+@theme inline {
+  --color-cream: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-raised: var(--surface-raised);
+  --color-primary: var(--ink);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-sale: var(--sale);
+  --color-border-subtle: var(--border-subtle);
+  --font-serif: var(--font-heading), Georgia, serif;
+  --font-sans: var(--font-body), system-ui, -apple-system, sans-serif;
+}
+
+@view-transition {
+  navigation: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  @view-transition {
+    navigation: none;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html {
+  background-color: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body), system-ui, -apple-system, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--ink);
+  font-size: 1rem;
+  line-height: 1.55;
+  overflow-x: clip;
+  min-height: 100dvh;
+}
+
+::selection {
+  background-color: var(--accent);
+  color: #ffffff;
+}
+
+:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
+}
+
+.font-heading {
+  font-family: var(--font-heading), Georgia, serif;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Kelime maskesi açılışı — JS kapalıyken veya reduced-motion'da doğrudan görünür */
+.word-mask {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+  padding-bottom: 0.08em;
+  margin-bottom: -0.08em;
+}
+
+.word-mask-inner {
+  display: inline-block;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .word-mask-inner {
+    animation: wordRise 820ms var(--ease-expo) both;
+  }
+}
+
+@keyframes wordRise {
+  from {
+    transform: translateY(108%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Editoryal görsel perde (shutter) açılışı */
+@media (prefers-reduced-motion: no-preference) {
+  .shutter-reveal {
+    animation: shutterOpen 1050ms var(--ease-expo) both;
+  }
+}
+
+@keyframes shutterOpen {
+  from {
+    opacity: 0;
+    transform: scale(1.04);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
