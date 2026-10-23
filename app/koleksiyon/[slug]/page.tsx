@@ -9,6 +9,13 @@ interface PageProps {
   params: Promise<{ slug: string }>;
 }
 
+export function generateStaticParams() {
+  return [
+    { slug: "tumu" },
+    ...Object.keys(CATEGORY_INFO).map((slug) => ({ slug })),
+  ];
+}
+
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
   if (slug === "tumu") {

@@ -1,6 +1,8 @@
 import type { MetadataRoute } from "next";
 import { products, CATEGORY_INFO } from "@/content/products";
 
+export const dynamic = "force-static";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://mirabutik-demo.ornek.com";
   const now = new Date();
