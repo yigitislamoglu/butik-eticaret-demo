@@ -231,6 +231,29 @@ export function Footer() {
                   </p>
                 )}
               </div>
+              <div style={{ width: "100%", marginTop: "1.75rem", paddingTop: "1.25rem", borderTop: "1px solid rgba(31,31,31,0.12)", display: "flex", flexWrap: "wrap", alignItems: "center", justifyContent: "space-between", gap: "1rem" }}>
+                <a
+                  href="https://emydigitalweb.com/tr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ display: "inline-flex", alignItems: "center", gap: "0.625rem", textDecoration: "none", color: "#1F1F1F", fontSize: "0.875rem", fontWeight: 500 }}
+                >
+                  <svg width="22" height="22" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <circle cx="50" cy="50" r="46" fill="#0b0b14" stroke="#1d4ed8" strokeWidth="6"/>
+                    <path d="M42 34L66 50L42 66V34Z" fill="#3b82f6"/>
+                  </svg>
+                  <span>E-Ticaret &amp; Web Yazılım: <strong style={{ color: "#1d4ed8" }}>EMY Digital</strong></span>
+                </a>
+                <a
+                  href="https://emydigitalweb.com/tr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ display: "inline-flex", alignItems: "center", gap: "0.25rem", color: "#1d4ed8", fontSize: "0.8125rem", textDecoration: "underline", textUnderlineOffset: "4px" }}
+                >
+                  <span>İşletmeniz İçin E-Ticaret Sitesi Alın</span>
+                  <span>↗</span>
+                </a>
+              </div>
 
               {site.demo && (
                 <div className="flex flex-wrap items-center gap-2">
